@@ -3,8 +3,8 @@ import React from 'react';
 import { useMenu } from '../context/MenuContext';
 import './DashboardStats.css';
 import AnalyticsPage from '../pages/dashboard/super-admin/analytics/page';
-
-
+import Users from '../pages/dashboard/super-admin/users/page';
+import Dashboard from '../pages/dashboard/super-admin/dashboard/page';
 
 const DashboardStats = () => {
   const { selectedMenu } = useMenu();
@@ -12,11 +12,29 @@ const DashboardStats = () => {
   const renderContent = () => {
     switch (selectedMenu) {
       case 'Tableau de Bord':
-        return <div><h2>Dashboard</h2><p>Contenu dynamique pour la page dashboard.<span><AnalyticsPage/></span></p></div>;
+        return (
+          <div>
+            <h2>Dashboard</h2>
+            <p>Contenu dynamique pour la page dashboard.</p>
+            <Dashboard />
+          </div>
+        );
       case 'Analyse':
-        return <div><h2>Analyse</h2><p>Contenu dynamique pour la page d'analyse. <span><AnalyticsPage/></span></p></div>;
+        return (
+          <div>
+            <h2>Analyse</h2>
+            <p>Contenu dynamique pour la page d'analyse.</p>
+            <AnalyticsPage />
+          </div>
+        );
       case 'Utilisateurs':
-        return <div><h2>Utilisateurs</h2><p>Gestion des utilisateurs.</p></div>;
+        return (
+          <div>
+            <h2>Utilisateurs</h2>
+            <p>Gestion des utilisateurs.</p>
+            <Users />
+          </div>
+        );
       case 'Rôles et Permissions':
         return <div><h2>Rôles et Permissions</h2><p>Gestion des rôles et permissions.</p></div>;
       case 'Feedbacks':
@@ -36,7 +54,9 @@ const DashboardStats = () => {
       case 'Support':
         return <div><h2>Support</h2><p>Accès au support.</p></div>;
       default:
-        return <p>Sélectionnez un menu pour afficher les informations.</p>;
+        return selectedMenu ? null : (
+          <p>Bienvenue sur cette plateforme conviviale. Nous sommes heureux de pouvoir être avec vous pour booster votre productivité et vous permettre de prendre les meilleures décisions en temps opportun.</p>
+        );
     }
   };
 

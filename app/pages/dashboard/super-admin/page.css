@@ -36,3 +36,38 @@
   margin: 0;
   margin-bottom: 1rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+.dashboard-stats {
+  padding: 2rem; /* Espacement autour des statistiques */
+  background-color: #f8f9fa; /* Couleur de fond claire */
+  flex: 1; /* Permet à ce composant d'occuper l'espace restant */
+}
+
+.charts-container {
+  display: grid; /* Utiliser une grille pour les statistiques */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adaptation responsive */
+  gap: 1rem; /* Espacement entre les cartes */
+}
+
+.chart-card {
+  background: #ffffff; /* Couleur de fond blanche */
+  padding: 1rem; /* Espacement intérieur */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre */
+  text-align: center; /* Centre le texte */
+}
+
+.chart-card h3 {
+  margin: 0; /* Enlève les marges par défaut */
+  margin-bottom: 1rem; /* Espacement en bas du titre */
+}
