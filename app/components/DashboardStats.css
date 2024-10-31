@@ -1,0 +1,102 @@
+.dashboard-stats {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    transition: margin-left 0.3s ease, width 0.3s ease;
+
+
+  }
+
+  .dashboard-stats h2{
+    font-size: 2rem;
+    background-color: #f8f9fa;
+    transition: margin-left 0.3s ease, width 0.3s ease;
+    font-family: pacifico, cursive;
+
+  }
+
+  .dashboard-stats p{
+    background-color: #f8f9fa;
+    transition: margin-left 0.3s ease, width 0.3s ease;
+    
+
+  }
+
+  .dashboard-stats p span{
+    background-color: #f8f9fa;
+    transition: margin-left 0.3s ease, width 0.3s ease;
+    font-size: larger;
+    font-weight: 400;
+    
+
+  }
+
+
+
+
+  
+  .dashboard-stats.compressed {
+    margin-left: 250px; /* Ajustez selon la largeur de votre sidebar */
+    width: calc(100% - 250px);
+  }
+  
+  .dashboard-stats.expanded {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .charts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+  
+  .chart-card {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .chart-card h3 {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+  .dashboard-stats {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    flex: 1;
+  }
+  
+  .charts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+  
+  .chart-card {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .chart-card h3 {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  
