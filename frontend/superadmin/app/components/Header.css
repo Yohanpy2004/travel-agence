@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between; /* Espacement entre le bouton et le titre */
+    align-items: center;
+    padding: 1rem 2rem; /* Espacement intérieur */
+    background-color: #007bff; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+  }
+  
+  .toggle-button {
+    background: none; /* Pas de fond */
+    border: none; /* Pas de bordure */
+    color: white; /* Couleur du texte */
+    font-size: 40px; /* Taille de la police */
+    cursor: pointer; /* Curseur en forme de main */
+    margin: -5px 15px 0 0;
+  }
+  
+  .toggle-button:hover {
+    opacity: 0.8; /* Réduction de l'opacité au survol */
+  }
+  
